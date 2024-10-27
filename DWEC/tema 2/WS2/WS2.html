@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+</head>
+<body>
+
+    <!-- Punto 1: Números aleatorios -->
+    <h2>Números Aleatorios</h2>
+    <p id="random-0-1">Número aleatorio entre 0 y 1: </p>
+    <p id="random-100-200">Número aleatorio entre 100 y 200: </p>
+    <label>Introduce el primer valor: <input type="number" id="valor1"></label>
+    <label>Introduce el segundo valor: <input type="number" id="valor2"></label>
+    <button onclick="generaNumeroEntreValores()">Generar Número Aleatorio</button>
+    <p id="random-user">Número aleatorio entre los valores introducidos: </p>
+
+    <hr>
+
+    <!-- Punto 5: Resolución de ecuaciones de segundo grado -->
+    <h2>Resolver Ecuación de Segundo Grado</h2>
+    <label>Coeficiente a: <input type="number" id="coef-a"></label>
+    <label>Coeficiente b: <input type="number" id="coef-b"></label>
+    <label>Coeficiente c: <input type="number" id="coef-c"></label>
+    <button onclick="resolverEcuacion()">Resolver Ecuación</button>
+    <p id="resultado-ecuacion">Solución: </p>
+
+    <hr>
+
+    <!-- Punto 7: Tabla con valores del seno -->
+    <h2>Tabla de Seno</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Número</th>
+                <th>Seno</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-seno">
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- Punto 8: Imagen aleatoria -->
+    <h2>Imagen Aleatoria</h2>
+    <img id="imagen-aleatoria" src="" alt="Imagen aleatoria" width="300">
+
+    <!-- Vinculamos el archivo script.js -->
+    <script src="WS2 Ej.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Enlaces e Imágenes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Ejemplo de Enlaces, Imágenes y Anclas</h1>
+
+<!-- Enlaces de ejemplo -->
+<nav>
+    <h2>Enlaces</h2>
+    <ul>
+        <li><a href="#section1">Sección 1</a></li>
+        <li><a href="#section2">Sección 2</a></li>
+        <li><a href="#section3">Sección 3</a></li>
+    </ul>
+</nav>
+
+<!-- Imágenes de ejemplo -->
+<section>
+    <h2>Imágenes</h2>
+    <img id="image1" src="https://via.placeholder.com/150" alt="Imagen 1">
+    <img id="image2" src="https://via.placeholder.com/150" alt="Imagen 2">
+    <img id="image3" src="https://via.placeholder.com/150" alt="Imagen 3">
+</section>
+
+<!-- Secciones de anclas -->
+<section>
+    <h2 id="section1">Sección 1</h2>
+    <p>Contenido de la sección 1.</p>
+    
+    <h2 id="section2">Sección 2</h2>
+    <p>Contenido de la sección 2.</p>
+    
+    <h2 id="section3">Sección 3</h2>
+    <p>Contenido de la sección 3.</p>
+</section>
+
+<!-- Botones para mostrar información -->
+<button id="showImageCount">Mostrar número de imágenes</button>
+<button id="showFirstImageId">Mostrar ID de la primera imagen</button>
+<button id="showLinkCount">Mostrar número de enlaces</button>
+<button id="showAnchorCount">Mostrar número de anclas</button>
+
+<!-- Resultados -->
+<div id="results">
+    <h2>Resultados</h2>
+    <p id="imageCount"></p>
+    <p id="firstImageId"></p>
+    <p id="linkCount"></p>
+    <p id="anchorCount"></p>
+</div>
+
+<!-- Enlazando el archivo script.js -->
+<script src="index.js"></script>
+
+</body>
+</html>
