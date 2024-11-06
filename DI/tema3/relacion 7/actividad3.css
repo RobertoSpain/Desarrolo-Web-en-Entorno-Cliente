@@ -1,0 +1,33 @@
+
+.text {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+}
+
+.text-1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.text-2 {
+    text-shadow: 2px 2px 5px red;
+}
+
+.text-3 {
+    text-shadow: 2px 2px 0 red, -2px -2px 0 green, 2px -2px 0 blue;
+}
+
+.text-4 {
+    text-shadow: 1px 1px 2px gray;
+    color: #B0B0B0;
+}
+
+.text-5 {
+    text-shadow: 2px 2px 2px #888888;
+    color: #666666;
+}
+
+.text-6 {
+    text-shadow: 2px 2px 4px #333333;
+    color: #444444;
+}

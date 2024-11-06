@@ -1,0 +1,24 @@
+/* Fuentes y colores */
+h1 {
+    color: darkred; /* Texto del encabezado en rojo oscuro */
+    font-family: 'Arial', sans-serif; /* Fuente diferente para el encabezado */
+}
+
+ol li, ul li {
+    font-family: 'Verdana', sans-serif; /* Títulos de los libros en una fuente sans-serif */
+}
+
+/* Estilos para la lista desordenada con puntos de viñeta cuadrada */
+.square-list {
+    background-color: lightyellow; /* Fondo amarillo claro para la lista */
+}
+
+.square-list li {
+    background-color: lightgray; /* Fondo gris para cada elemento de la lista */
+    list-style-type: square; /* Puntos de viñeta cuadrada */
+}
+
+/* Estilos para la lista desordenada con viñetas de imagen */
+.image-list {
+    list-style-image: url('path/to/image.png'); /* Ruta a la imagen de la viñeta */
+}

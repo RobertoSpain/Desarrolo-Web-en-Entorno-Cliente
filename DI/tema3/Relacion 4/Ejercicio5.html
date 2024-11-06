@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 5: Contorno vs Borde</title>
+    <style>
+        /* Estilos generales */
+        div {
+            border: 2px solid #333;
+            background-color: #ddd;
+            padding: 1rem;
+        }
+        p {
+            font-size: 2rem;
+            background-color: #888;
+            width: 50%;
+            margin: 2rem auto;
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        /* Clase para el borde */
+        .borde {
+            border: 2px solid green;
+        }
+
+        /* Clase para el contorno */
+        .contorno {
+            outline: 2px solid green;
+        }
+
+        /* Modificación para que el fondo solo se aplique al contenido */
+        .clip {
+            background-clip: content-box;
+        }
+
+        /* Regla para asegurar que ambos párrafos ocupen el mismo espacio */
+        .igual-espacio {
+            box-sizing: border-box; /* Ajusta el espacio considerando el borde */
+        }
+
+        /* Estilos adaptables */
+        @media (min-width: 768px) {
+            .borde {
+                border-width: 4px;
+            }
+            .contorno {
+                outline-width: 4px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .borde {
+                border-width: 1px;
+            }
+            .contorno {
+                outline-width: 1px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="borde clip igual-espacio">Borde</p>
+        <p class="contorno igual-espacio">Contorno</p>
+    </div>
+</body>
+</html>

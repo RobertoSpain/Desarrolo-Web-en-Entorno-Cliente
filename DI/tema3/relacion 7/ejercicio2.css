@@ -1,0 +1,62 @@
+/* General styles for the boxes */
+.box {
+    width: 100px;
+    height: 60px;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Specific styles for each shadow */
+.box-a {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box-b {
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box-c {
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box-d {
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box-e {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.15);
+}
+
+.box-f {
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.15);
+}
+
+.box-g {
+    box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.15);
+}
+
+.box-h {
+    box-shadow: -10px -10px 5px rgba(0, 0, 0, 0.15);
+}
+
+.box-i {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.box-j {
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.box-k {
+    box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.box-l {
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
+}

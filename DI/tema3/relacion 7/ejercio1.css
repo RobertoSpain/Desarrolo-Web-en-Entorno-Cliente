@@ -1,0 +1,42 @@
+/* General styles for the boxes */
+.box {
+    width: 100px;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Specific styles for each shape */
+.box-a {
+    border-radius: 50% 20% 50% 20%; /* Top left and bottom left are rounded */
+}
+
+.box-b {
+    border-radius: 20% 50% 20% 50%; /* Top right and bottom right are rounded */
+}
+
+.box-c {
+    border-radius: 0 50% 50% 0; /* Right side is rounded */
+}
+
+.box-d {
+    border-radius: 50% 20% 50% 20%; /* Very rounded, almost a circle */
+    width: 120px;
+}
+
+.box-e {
+    border-radius: 20% 50% 20% 50%; /* Oval shape */
+    width: 100px;
+}
+
+.box-f {
+    border-radius: 50%; /* Circle */
+    width: 60px;
+    height: 60px;
+}

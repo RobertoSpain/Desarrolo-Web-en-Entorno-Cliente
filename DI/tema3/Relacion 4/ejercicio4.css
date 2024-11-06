@@ -1,0 +1,46 @@
+/* Todos los div tienen color de fondo gris claro */
+div {
+    background-color: lightgray;
+}
+
+/* Todos los elementos <a> dentro de un div tienen color de fondo azul y texto blanco */
+div a {
+    background-color: blue;
+    color: white;
+}
+
+/* Regla a analizar */
+div div div a {
+    background-color: red;
+    color: yellow;
+}
+
+/* Los elementos cuyo identificador es abuelo tendrán un borde azul de 1 px */
+#abuelo {
+    border: 1px solid blue;
+}
+
+/* Todos los div que son hijos de abuelo tienen borde rojo de 2px */
+#abuelo > div {
+    border: 2px solid red;
+}
+
+/* Los párrafos adyacentes directos a la .padre tendrán fondo verde lima */
+.padre > p {
+    background-color: limegreen;
+}
+
+/* Los párrafos adyacentes a la .madre tendrán fondo rosa claro */
+.madre + p {
+    background-color: lightpink;
+}
+
+/* Todos los enlaces que tienen atributo title tienen fondo rojo */
+a[title] {
+    background-color: red;
+}
+
+/* Todos los enlaces que no tienen el atributo “target=_blank” tienen fondo morado */
+a:not([target="_blank"]) {
+    background-color: purple;
+}

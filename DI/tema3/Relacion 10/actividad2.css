@@ -1,0 +1,56 @@
+/* Estilo de la tarjeta */
+.card {
+    width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imagen en la parte superior */
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Contenido de la tarjeta */
+.card-content {
+    padding: 16px;
+    flex-grow: 1;
+}
+
+/* Título y párrafo de comentarios */
+.card-content h1 {
+    font-size: 1.5em;
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.card-content p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Botón siempre en la parte inferior */
+.card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-top: 1px solid #ddd;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    display: flex; /* Usamos flexbox para alinear las tarjetas */
+    gap: 20px; /* Espacio entre las tarjetas */
+
+}
