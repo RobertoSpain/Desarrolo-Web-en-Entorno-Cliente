@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Lanzamiento de Dado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #resultado {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Simulación de Lanzamiento de Dado</h1>
+    
+    <button onclick="lanzamiento()">Lanzar Dado</button>
+    <button onclick="simulacion()">Simulación 6000 tiradas</button>
+    
+    <div id="resultado">Haz clic en el botón para lanzar el dado</div>
+    
+    <h2>Resultados de la simulación</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Valor del dado</th>
+                <th>Ocurrencias</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td id="valor1">0</td></tr>
+            <tr><td>2</td><td id="valor2">0</td></tr>
+            <tr><td>3</td><td id="valor3">0</td></tr>
+            <tr><td>4</td><td id="valor4">0</td></tr>
+            <tr><td>5</td><td id="valor5">0</td></tr>
+            <tr><td>6</td><td id="valor6">0</td></tr>
+        </tbody>
+    </table>
+
+    <!-- Importar el archivo JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: wheat
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: aquamarine;
+    color: white;
+    border: 5px;
+}
+
+.botones{
+    background-color: white;
+    text-align: center;
+    
+}

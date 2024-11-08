@@ -1,0 +1,75 @@
+/* Estilos básicos del cuerpo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    margin: 0;
+}
+
+/* Contenedor principal del juego */
+.tres-en-raya {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el título */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Tablero de juego */
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+/* Estilo de cada celda */
+.celda {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Efecto hover en las celdas */
+.celda:hover {
+    background-color: #3e8e41;
+}
+
+/* Botón de reinicio */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Efecto hover en el botón */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Mensaje de resultado */
+#mensaje {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #333;
+}

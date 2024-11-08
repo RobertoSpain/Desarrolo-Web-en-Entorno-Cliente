@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form id="registroForm" onsubmit="return validarFormulario()">
+        <label>Nombre:</label>
+        <input type="text" id="nombre" required><br><br>
+
+        <label>Apellidos:</label>
+        <input type="text" id="apellidos" required><br><br>
+
+        <label>DNI: </label>
+        <input type="text" id="DNI" required><br><br>
+
+        <label>Telefono: </label>
+        <input type="text" id="Telefono" required><br><br>
+
+        <label>Email: </label>
+        <input type="text" id="email" required>
+
+        <label>Nombre de Usuarios: </label>
+        <input type="text" id="usuario" required>
+
+        <button type="submit">Registrarse</button>
+    </form>
+    <script src="validacion.js"></script>
+</body>
+</html>
