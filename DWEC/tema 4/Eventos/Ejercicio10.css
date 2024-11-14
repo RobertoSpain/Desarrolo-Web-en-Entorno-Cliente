@@ -1,0 +1,21 @@
+body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+#container {
+    position: relative; 
+    width: 1200px; 
+    height: 630px; 
+    border: 2px dashed #aaa; 
+}
+
+.gatitos {
+    position: absolute; 
+    width: 100px; 
+    height: auto; 
+    cursor: pointer; 
+}
