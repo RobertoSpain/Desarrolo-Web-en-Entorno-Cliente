@@ -1,4 +1,0 @@
-function cambiarColor()
-{
-    document.getElementById
-}
