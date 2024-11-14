@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f38181;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #f8e9a1;
+}
+
+.container {
+    text-align: center;
+}
+
+input[type="text"] {
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #f8e9a1;
+    background-color: #f38181;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.requirements {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.requirements li {
+    color: #f8e9a1;
+}
+
+.requirements .valid {
+    color: #95e1d3;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #f8e9a1;
+    color: #f38181;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
