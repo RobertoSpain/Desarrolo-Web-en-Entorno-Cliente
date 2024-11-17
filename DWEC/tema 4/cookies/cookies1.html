@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookies - Usuario</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+    }
+    button, a {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover, a:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="content"></div>
+  </div>
+
+  <script>
+    // Función para establecer una cookie
+    function setCookie(name, value, minutes) {
+      const date = new Date();
+      date.setTime(date.getTime() + (minutes * 60 * 1000));
+      document.cookie = `${name}=${encodeURIComponent(value)};expires=${date.toUTCString()};path=/`;
+    }
+
+    // Función para obtener el valor de una cookie
+    function getCookie(name) {
+      const cookies = document.cookie.split(';');
+      for (let cookie of cookies) {
+        const [key, value] = cookie.split('=').map(c => c.trim());
+        if (key === name) return decodeURIComponent(value);
+      }
+      return null;
+    }
+
+    // Función para borrar una cookie
+    function deleteCookie(name) {
+      document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/`;
+    }
+
+    // Función para mostrar contenido en la página
+    function renderContent() {
+      const contentDiv = document.getElementById('content');
+      const username = getCookie('username');
+
+      if (username) {
+        // Si existe la cookie, saluda al usuario y muestra un enlace para borrar la cookie
+        contentDiv.innerHTML = `
+          <h2>Hola, ${username}!</h2>
+          <a href="#" onclick="logout()">Cerrar Sesión</a>
+        `;
+      } else {
+        // Si no existe la cookie, solicita el nombre del usuario
+        contentDiv.innerHTML = `
+          <h2>Bienvenido!</h2>
+          <p>Por favor, introduce tu nombre:</p>
+          <input type="text" id="username" placeholder="Tu nombre" />
+          <button onclick="saveName()">Guardar</button>
+        `;
+      }
+    }
+
+    // Función para guardar el nombre del usuario en una cookie
+    function saveName() {
+      const input = document.getElementById('username');
+      const username = input.value.trim();
+
+      if (username) {
+        setCookie('username', username, 5); // Cookie válida por 5 minutos
+        renderContent(); // Actualiza la interfaz
+      } else {
+        alert('Por favor, introduce un nombre válido.');
+      }
+    }
+
+    // Función para borrar la cookie y cerrar sesión
+    function logout() {
+      deleteCookie('username');
+      renderContent();
+    }
+
+    // Renderiza el contenido inicial
+    renderContent();
+  </script>
+</body>
+</html>
