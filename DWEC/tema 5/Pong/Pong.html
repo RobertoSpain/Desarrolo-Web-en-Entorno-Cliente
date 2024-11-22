@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Simple</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: whitesmoke;
+            background-image: url('space.jpg'); 
+            background-size: cover; 
+            background-position: center;
+        }
+
+        /* Contenedor que envuelve el SVG */
+        #juegoPongContainer {
+            position: relative;
+            padding: 20px; 
+            background-color: aliceblue;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border: 2px solid black; 
+        }
+
+        svg {
+            border: none; 
+        }
+
+        /* Estilo para el marcador */
+        #marcador {
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+            position: absolute;
+            top: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="fondo">
+        <div id="juegoPongContainer">
+            <div id="marcador"></div>
+            <svg width="580" height="580" id="juegoPong"></svg>
+        </div>    
+    </div>
+
+    <script src="Pong.js"></script>
+</body>
+</html>
+  

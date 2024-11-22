@@ -1,0 +1,5 @@
+body{background-color: antiquewhite;}
+.container { text-align: center; font-family: Arial, sans-serif; background-color: aquamarine;}
+.letters { display: flex; flex-wrap: wrap; justify-content: center; margin: 20px; }
+.letter { margin: 5px; padding: 10px 20px; background: white; cursor: pointer; border: 1px solid black; }
+.hidden { display: none; }

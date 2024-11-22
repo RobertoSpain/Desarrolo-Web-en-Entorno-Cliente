@@ -1,0 +1,24 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #4a90e2;
+  }
+  
+  /* Contenedor de los gráficos */
+  .chart {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
